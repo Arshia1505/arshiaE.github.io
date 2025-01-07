@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Quiz for Kids</title>
+    <link rel="stylesheet" href="nquiz.css">
+</head>
+<style>
+    body {
+      background-image: url('https://i.ibb.co/JqzqxFT/phonics.jpg');
+    }
+    </style>
+<body>
+    <div class="transbox">
+    <div class="container">
+        <h1 style="font-family: Moo Lah Lah, sans-serif; font-size:100px;font-weight:lighter;color:rgb(189, 0, 0);"class="title">Explore the Globe!</h1>
+        <button style="margin-top:10px;margin-bottom:20px;" id="finishBtn">Finish</button>
+
+        
+        <!-- Progress bar -->
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+
+        <div id="question-box" class="question-box">
+            <p style="font-family:Delius Swash Caps, cursive;font-weight:500 px;font-size:60px;color:rgb(0, 111, 139);"id="question" class="question">What is the largest continent in the world?</p>
+        </div>
+        
+        <div class="button-container">
+            <button class="answer-btn" onclick="checkAnswer(4)">4</button>
+            <button class="answer-btn" onclick="checkAnswer(5)">5</button>
+            <button class="answer-btn" onclick="checkAnswer(6)">6</button>
+            <button class="answer-btn" onclick="checkAnswer(3)">3</button>
+        </div>
+
+        <div id="result" class="result"></div>
+        <div id="next-btn-container" class="next-btn-container" style="display: none;">
+            <button class="next-btn" onclick="nextQuestion()">Next Question</button>
+        </div>
+    </div>
+    </div>
+    <!-- Rocket container -->
+   <!--<img id="rocket" src="C:\Users\HP\OneDrive\Pictures\Screenshots\Screenshot 2024-11-06 202239.png" alt="Rocket">-->
+<!-- <div id="rocket" class="rocket"></div>-->
+
+ <!-- Floating numbers and letters will be added here dynamically -->
+<!--<div id="floating-elements"></div>-->  
+  <div id="confetti-container"></div>
+    <script src="geo_quiz.js"></script>
+</body>
+</html>
